@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 10, 0, 0.73)), url('/public/assets/background.jpeg');
+/*'../../public/assets/background.jpeg'*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.card {
+    animation: fadeInAnimation ease-in-out 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.navbar{
+    color: #1a202c;
+}
+
+.card-header>h3{
+    float: left;
+    padding-left: 30px;
+}
+.form-control{
+
+}
+input{
+    background-color: gray !important;
+    border: 0 !important;
+    border-radius: 15px !important;
+    padding-left: 20px !important;
+}
+::placeholder {
+    color: #a0aec0 !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #a0aec0 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #a0aec0 !important;
+}
+button{
+    border-radius: 15px !important;
+    font-weight: bold !important;
+}
+.package{
+    border-radius: 15px !important;
+}
